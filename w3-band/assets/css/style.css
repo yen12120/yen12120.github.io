@@ -139,7 +139,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 42%;
-    background: url('file:///C:/Users/admin/Documents/GitHub/yen12120.github.io/w3-band/assets/img/slider/slider5.jpg') center center /cover no-repeat;
+    background: url('./assets/img/slider/slider5.jpg') center center /cover no-repeat;
 }
 
 #slider .text-content{
