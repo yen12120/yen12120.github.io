@@ -1,0 +1,383 @@
+/* reset css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.li-none{
+    list-style: none;
+}
+/* reset css end */
+/* 
+1.vị trí
+2.kích thước( width, height)
+3.màu sắc
+4.kiểu dáng(méo, tròn, vuông)
+ */
+ .column{
+    flex: 1;
+    margin-left: 16px;
+    margin-right: 16px;
+    
+}
+/* .col-haft{
+    width: 50%;
+} */
+
+
+ .row{
+    margin: 0 -16px 16px;
+    display: flex;
+    overflow: hidden;
+}
+.row::after{
+ content: "";
+ display: block;
+ clear: both;
+}
+/* main start */
+#main{
+
+}
+/* header start */
+#header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+
+  
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #f44336;
+    
+}
+/* nav start */
+#nav , .subnav{
+    list-style: none;
+    display: inline-block;
+    border-radius: 2px;
+
+}
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+  
+   position: relative;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px;
+    line-height: 46px;
+}
+#nav li a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+
+#nav .subnav{
+    display:  none;
+    position: absolute;
+    top: 100%;
+    left:0;
+    min-width: 150px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0,0.3);
+    
+}
+#nav >li:hover> a,
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav a{
+   color: black;
+   padding: 12px;
+   width: 100%;
+}
+#nav .nav-icon-down .ti-arrow-circle-down{
+    font-size: 14px;
+    margin-left: 5px;
+}
+/* nav end */
+/* search start */
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    
+   
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+   
+}
+#header .search-icon{
+    color: #fff;
+    font-size: 16px;
+    padding: 21px;
+}
+/* search end */
+/* header end*/
+/* slider start */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 42%;
+    background: url('file:///C:/Users/admin/Documents/GitHub/yen12120.github.io/w3-band/assets/img/slider/slider5.jpg') center center /cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    left: 30px;
+    padding: 5px 15px;
+    /* color: rgb(24, 221, 221); */
+    color: rgb(128, 125, 125);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    text-align: center;
+
+}
+#slider .text-heading{
+    margin: 0 0 10px;
+    font-size: 25px;
+    font-weight: 530;
+
+}
+#slider .text-description{
+  
+}
+
+/* slider end*/
+/* content start */
+#content{
+
+}
+#content .content-section{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0;
+}
+/* the band start */
+#content .section-heading{
+    color: #111111;
+    font-weight: 200;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+
+}
+#content .section-slogan{
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-style: italic;
+    text-align: center;
+
+}
+#content .about-description-content{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 10px 0;
+}
+.section-slogan .slogan-icon{
+     color: red;
+     margin-bottom: 15px;
+}
+.page-second .member-img{
+    width: 520px;
+    height: 360px;
+}
+.page-second {
+    display: flex;
+   
+}
+.member-list{
+    width: 100%;
+}
+
+.member-item .avarta-img{
+    
+    display: block;
+    width: 96px;
+    height: 98px;
+    object-fit: cover;
+    /* margin :0 16px; */
+    border-radius: 100%;
+    margin-top: 25px;
+}
+.member-list{
+    margin-top: 42px;
+    
+    display: flex;
+   
+}
+.member-item{
+    text-align: center;
+    width: calc(100% / 6);
+    margin-left: 13px;
+}
+
+
+/* the band end */
+
+/* tour start */
+.tour-section{
+    background-color: #000;
+    color: white;
+    padding-bottom: 25px;
+}
+.text-white{
+    color: white !important;
+}
+.tickets{
+    margin-top: 40px;
+}
+.tickets li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    line-height: 26px;
+    list-style: none;
+}
+.tour-section .tickets{
+    width: 100%;
+    height: 143px;
+    background-color: white;
+    color: #bdc3d4;
+}
+.tickets .sold-out{
+    color: white;
+    background-color: #d9534f;
+    font-size: 12px;
+    font-weight: 550;
+    padding: 4px 9px;
+    border-radius: 3px;
+}
+.number-ticket{
+    float: right;
+    background-color: #767676;
+    width: 22px;
+    height: 19px;
+    align-items: center;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.place-iteam{
+    margin-top: 20px;
+    background-color: white;
+}
+.place-img{
+    width: 100%;
+    height: 168px;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.place-name{
+    color: #555555;
+    margin: 15px 0 10px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.time-tour{
+    color: #705d55;
+    margin: 15px 0 12px;
+    text-align: center;
+    font-style:italic;
+}
+
+.buy-ticket-btn{
+    width: 112px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    margin: 0 auto 15px;
+    
+}
+.btn-band{
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    border: 1px solid #000;
+}
+.btn-band:hover{
+    color: black;
+    background-color: white;
+}
+
+/* tour end */
+/* contact from start */
+.contact-icon{
+    margin-right: 6px;
+}
+.contact-content li{
+    margin-bottom: 10px;
+    color:#8d7777;
+}
+.contact-content{
+    margin-top: 30px;
+
+}
+.form-contact .from-control{
+    padding: 8px 13px;
+    outline: none;
+    box-shadow:  inset;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.from-control.btn-contact{
+    width: 73px;
+    height: 35px;
+    border: 1px 1px 1px 1px solid black;
+    float: right;
+   
+}
+.form-contact .from-control:focus {
+    border: 1px solid rgb(100, 200, 240);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.from-control.description-comment{
+    /* line-height: 120px; */
+   
+}
+/* contact from end*/
+/* content end */
+#footer{
+    
+}
+/* main end */
