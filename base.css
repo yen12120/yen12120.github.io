@@ -1,0 +1,172 @@
+.grid{
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 10px;
+   
+}
+/* test mai sd reponsive thì thay đổi sau */
+.grid__column-2{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 15%;
+    margin-bottom: 5px;
+    
+}
+.grid__column-2-4{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 19%;
+    margin-bottom: 10px;
+}
+.grid__column-10{
+    flex:1;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 85%;
+    margin-bottom: 5px;
+   
+}
+/* end test */
+:root{
+    --primary-color: #ee4d2d;
+    --boder-color: rgb(223, 219, 219);
+    --rating-color: #FFce3d;
+    --header-nav: 120px;
+    --header-menu: 34px;
+    --header-wiht-share: calc(var(--header-nav) - var(--header-menu));
+}
+/* modal layout start*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+.modal-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+.modal-body{
+    background-color:white;
+    margin: auto;
+    z-index: 1;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.auth-form{
+    width: 500px;
+    position: relative;
+    
+}
+/* modal layout end*/
+/* button -syple start*/
+.btn{
+    min-width: 120px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+.btn.btn-nomarl:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+.btn.btn-size-s{
+    height: 32px;
+    font-size: 13px;
+}
+.btn.btn--primary{
+    color: white;
+    background-color: var(--primary-color);
+}
+/* use disable vô hiệu hóa btn */
+.btn.btn-disable{
+    cursor: default;
+    color: #b6afaf;
+    background-color: #928f8f;
+}
+.text-social{
+    margin-left: 16px;
+}
+@keyframes Fade{
+    from{
+        transform: scale(var(--fade-from));}
+    to{
+        transform: scale(var(--fade-to));}
+}
+/* button -syple  end*/
+/* selection */
+.select-want{
+    min-width: 200px;
+    height: 30px;
+    padding: 0 12px;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* selection end */
+/* pagination start */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+
+}
+.pagination-iteam{
+    margin: 0 16px;
+}
+.pagination-iteam-link{
+    text-decoration: none;
+    color: #939393;
+    font-size: 20px;
+    min-width: 40px;
+    height: 30px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+.pagination-iteam-icon{
+    font-size: 25px;
+    font-weight: 400;
+}
+.pagination-iteam--active .pagination-iteam-link{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 3px;
+
+}
+.pagination-iteam--active .pagination-iteam-link:hover{
+  background-color: rgba(243, 89, 50,0.9);
+}
+.pagination-iteam-link-three{
+    cursor: default;
+
+}
+/* pagination end */
